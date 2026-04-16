@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>word dictionary</title>\
+    <title>Find Your Word</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Word Find</h1>
-    <form id="searchForm" class="searchform">
-        <input type="text" id="wordInput" placeholder="Enter a word">
-    <button id="searchButton">Search</button>
-    </form>
+  <h1>Find Your Word!</h1>
+<section class="container">
+  <form id="form" >
+    <input type="text" id="word" placeholder="Enter word" required>
+    <button type="submit">Search</button>
+  </form>
+  <audio class="audio" id="audio" controls class="audio"></audio>
+  <p id="result" class="result"></p>
+  <p id="error" style="color:red;"></p>
 
-<section id="results" class="results"> 
-  <p class="result-output"> enter aword to begin with </p>
-</section>
-
+  </section>
 <script src="index.js"></script>
 </body>
 </html>
